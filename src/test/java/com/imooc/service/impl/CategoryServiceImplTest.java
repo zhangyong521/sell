@@ -14,7 +14,7 @@ import java.util.List;
  * @author 张勇
  * @version 1.0
  * @date 2020/12/28 18:12
- * @description TODO
+ * @description 商品类目service的测试
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest
