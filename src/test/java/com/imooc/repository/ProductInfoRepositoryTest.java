@@ -14,7 +14,7 @@ import java.util.List;
  * @author 张勇
  * @version 1.0
  * @date 2020/12/28 21:39
- * @description TODO
+ * @description 测试商品信息
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

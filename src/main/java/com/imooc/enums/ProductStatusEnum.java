@@ -10,8 +10,12 @@ import lombok.Getter;
  */
 @Getter
 public enum ProductStatusEnum {
+    /**
+     * 商品状态的枚举
+     */
     UP(0, "在架"),
-    DOWN(1, "下架");
+    DOWN(1, "下架"),
+    ;
 
     private Integer code;
     private String message;
