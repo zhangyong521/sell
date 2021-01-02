@@ -35,6 +35,11 @@ public class WechatController {
         //1. 配置config里面
         //2. 调用方法
         String url = "http://zhangyong.wezoz.com/sell/wechat/userInfo";
+
+        /**
+         *  WxConsts.OAUTH2_SCOPE_BASE 无感知的授权，拿到的信息比较少
+         *  WxConsts.OAUTH2_SCOPE_USER_INFO 点击登陆授权，拿到的东西比较多
+         */
         String redirectUrl = wxMpService.oauth2buildAuthorizationUrl(url, WxConsts.OAUTH2_SCOPE_BASE, URLEncoder.encode(returnUrl));
         return "redirect:" + redirectUrl;
     }

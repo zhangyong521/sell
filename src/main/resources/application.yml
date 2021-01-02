@@ -12,5 +12,9 @@ server:
   context-path: /sell
 #微信公众号
 wechat:
-  mpAppId: wx1e6be203b8d631d7
-  mpAppSecret: e71ddd4d46204f95ce76b12fdb3ad81b
+  mpAppId: wx1e6be203b8d631d7 #微信公众号ID
+  mpAppSecret: e71ddd4d46204f95ce76b12fdb3ad81b #微信公众号密钥
+  mchId: 1483469312 #微信支付的商户号
+  mchKey: 06C56A89949D617xxxxxxxxxxx #微信支付的商户密钥
+  keyPath: /var/weixin_cert/h5.p12 #微信支付的商户证书
+  notifyUrl: http://zhangyong.wezoz.com/sell/pay/notify #异步通知地址
