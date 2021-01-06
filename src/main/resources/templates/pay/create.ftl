@@ -1,4 +1,3 @@
-<#--创建订单的签名属性-->
 <script>
     function onBridgeReady(){
         WeixinJSBridge.invoke(
