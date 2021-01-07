@@ -2,10 +2,14 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 521521
+    password: 123456
     url: jdbc:mysql://127.0.0.1/sell?characterEncoding=utf-8&useSSL=false
   jpa:
     show-sql: true
+#redies配置
+  redis:
+      host: 192.168.3.78
+      port: 6379
   jackson:
     default-property-inclusion: non_null
 server:
@@ -14,7 +18,14 @@ server:
 wechat:
   mpAppId: wx1e6be203b8d631d7 #微信公众号ID
   mpAppSecret: e71ddd4d46204f95ce76b12fdb3ad81b #微信公众号密钥
+  openAppId: wx6ad144e54af67d87  #微信开放平台ID
+  openAppSecret: 91a2ff6d38a2bbccfb7e9f9079108e2e  #微信开放平台秘钥
   mchId: 1483469312 #微信支付的商户号
   mchKey: 06C56A89949D617xxxxxxxxxxx #微信支付的商户密钥
   keyPath: /var/weixin_cert/h5.p12 #微信支付的商户证书
   notifyUrl: http://zhangyong.wezoz.com/sell/pay/notify #异步通知地址
+
+projectUrl:
+  wechatMpAuthorize: http://sell.natapp4.cc #公众平台地址
+  wechatOpenAuthorize: http://sell.natapp4.cc #开放平台地址
+  sell: http://sell.natapp4.cc #项目地址

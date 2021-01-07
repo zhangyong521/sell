@@ -10,7 +10,7 @@ import java.util.Map;
  * @author 张勇
  * @version 1.0
  * @date 2021/1/2 0:29
- * @description 微信授权和微信支付的位置文件实体
+ * @description 微信文件实体
  */
 
 @Data
