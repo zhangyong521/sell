@@ -9,7 +9,7 @@ import lombok.Getter;
  * @description 商品状态的枚举
  */
 @Getter
-public enum ProductStatusEnum {
+public enum ProductStatusEnum implements CodeEnum{
     /**
      * 商品状态的枚举
      */

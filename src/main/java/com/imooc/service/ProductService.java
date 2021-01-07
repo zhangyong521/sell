@@ -32,6 +32,7 @@ public interface ProductService {
 
     /**
      * 分页查询所有的商品
+     *
      * @param pageable
      * @return
      */
@@ -47,14 +48,31 @@ public interface ProductService {
 
     /**
      * 加库存
+     *
      * @param cartDTOList
      */
     void increaseStock(List<CartDTO> cartDTOList);
 
     /**
      * 减库存
+     *
      * @param cartDTOList
      */
     void decreaseStock(List<CartDTO> cartDTOList);
+
+    /**
+     * 商品上架
+     * @param productId
+     * @return
+     */
+    ProductInfo onSale(String productId);
+
+    /**
+     * 商品下架
+     *
+     * @param productId
+     * @return
+     */
+    ProductInfo offSale(String productId);
 
 }
