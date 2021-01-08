@@ -1,6 +1,7 @@
 package com.imooc.exception;
 
 import com.imooc.enums.ResultEnum;
+import lombok.Getter;
 
 /**
  * @author zy
@@ -8,6 +9,7 @@ import com.imooc.enums.ResultEnum;
  * @date 2020/12/29 14:34
  * @description 异常同意处理
  */
+@Getter
 public class SellException extends RuntimeException {
 
     private Integer code;
@@ -21,4 +23,5 @@ public class SellException extends RuntimeException {
         super(message);
         this.code = code;
     }
+
 }
