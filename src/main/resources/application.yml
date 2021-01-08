@@ -24,7 +24,8 @@ wechat:
   mchKey: 06C56A89949D617xxxxxxxxxxx #微信支付的商户密钥
   keyPath: /var/weixin_cert/h5.p12 #微信支付的商户证书
   notifyUrl: http://zhangyong.wezoz.com/sell/pay/notify #异步通知地址
-
+  templateIds:
+    orderStatus: uyjvfWUNNxavK_hW_dfNM1noVp-jHXcjadjBcM8BVYY
 projectUrl:
   wechatMpAuthorize: http://sell.natapp4.cc #公众平台地址
   wechatOpenAuthorize: http://sell.natapp4.cc #开放平台地址
